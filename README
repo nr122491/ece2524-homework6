@@ -17,5 +17,6 @@ How might you modify your Process class to allow the programmer an easy way to u
   general freedom on the issue.
 
 How might you handle the case when a child process terminates before the parent process destroies it? I.e. how might the parent be signaled when a child terminates, and then read in any data it has written to its output.
-  
+  We could have it save it's last output to somewhere global the the parent can grab that data from when called for or
+  when the parent closes.
 
