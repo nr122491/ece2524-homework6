@@ -1,4 +1,4 @@
-#include <stdlib.h>
+in#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -14,8 +14,8 @@ Process::Process(const std::vector<char*>& args, bool verbose) :
     m_pread((FILE*)NULL)
 {
     if(args[0] == NULL){
-perror("No input");
-throw std::string("No input");
+perror("Check input");
+throw std::string("Check input");
     } else{
 m_name = args[0];
     }
