@@ -36,10 +36,10 @@ cerr << "output from process: " << output << "END" << endl;
 }
 */
 sleep(5);
-cerr << "Process object destroyed" << endl;
+cerr << "Object deleted" << endl;
     }
 
-    cerr << "Program exiting. Confirm child process has been cleaned up." << endl;
+    cerr << "Exiting, child cleaned up" << endl;
     sleep(5);
     return(EXIT_SUCCESS);
 }
